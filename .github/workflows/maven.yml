@@ -25,4 +25,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Build the Docker image
-      run: docker build - spring-docker-ghaction:$(date +%s) .
+      run: docker build -t spring-docker-ghaction:$(date +%s) .
